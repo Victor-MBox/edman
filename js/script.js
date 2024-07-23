@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.9,
 		ease: 'none',
 		scrollTrigger: {
-			start: '100px', // Начало анимации при скролле на 100 пикселей
-			end: '600px', // Конец анимации при скролле на 600 пикселей
+			start: '100px', 
+			end: '600px', 
 			scrub: true,
 		},
 	})
@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.9,
 		ease: 'none',
 		scrollTrigger: {
-			start: '150px', // Начало анимации при скролле на 150 пикселей
-			end: '650px', // Конец анимации при скролле на 650 пикселей
+			start: '150px', 
+			end: '650px', 
 			scrub: true,
 		},
 	})
@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.8,
 		ease: 'none',
 		scrollTrigger: {
-			start: '100px', // Начало анимации при скролле на 200 пикселей
-			end: '600px', // Конец анимации при скролле на 700 пикселей
+			start: '100px', 
+			end: '600px', 
 			scrub: true,
 		},
 	})
@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
     opacity: 0.7,
 		ease: 'none',
 		scrollTrigger: {
-			start: '150px', // Начало анимации при скролле на 250 пикселей
-			end: '650px', // Конец анимации при скролле на 750 пикселей
+			start: '150px', 
+			end: '650px', 
 			scrub: true,
 		},
 	})
@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.6,
 		ease: 'none',
 		scrollTrigger: {
-			start: '100px', // Начало анимации при скролле на 300 пикселей
-			end: '600px', // Конец анимации при скролле на 800 пикселей
+			start: '100px', 
+			end: '600px', 
 			scrub: true,
 		},
 	})
@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.8,
 		ease: 'none',
 		scrollTrigger: {
-			start: '150px', // Начало анимации при скролле на 350 пикселей
-			end: '650px', // Конец анимации при скролле на 850 пикселей
+			start: '150px', 
+			end: '650px',
 			scrub: true,
 		},
 	})
@@ -148,8 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 1,
 		ease: 'none',
 		scrollTrigger: {
-			start: '100px', // Начало анимации при скролле на 400 пикселей
-			end: '600px', // Конец анимации при скролле на 900 пикселей
+			start: '100px',
+			end: '600px', 
 			scrub: true,
 		},
 	})
@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 0.8,
 		ease: 'none',
 		scrollTrigger: {
-			start: '100px', // Начало анимации при скролле на 400 пикселей
-			end: '600px', // Конец анимации при скролле на 900 пикселей
+			start: '100px',
+			end: '600px', 
 			scrub: true,
 		},
 	})
@@ -176,8 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		opacity: 1,
 		ease: 'none',
 		scrollTrigger: {
-			start: '200px', // Начало анимации при скролле на 450 пикселей
-			end: '650px', // Конец анимации при скролле на 950 пикселей
+			start: '200px',
+			end: '650px', 
 			scrub: true,
 		},
 	})
