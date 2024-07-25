@@ -10,6 +10,10 @@ html {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -30,10 +34,11 @@ h6 {
 
 /* Header */
 .header {
-	height: 193px;
+	height: 130px;
 	position: sticky;
 	z-index: 5;
 	top: 0;
+  margin-bottom: 63px;
 
 	.logo {
 		height: 100%;
@@ -44,6 +49,14 @@ h6 {
 			transition: 0.5s;
 		}
 	}
+
+  &_scroll {
+    .logo {
+      img {
+        margin-top: -28px;
+      }
+    }
+  }
 }
 
 /* first-section */
@@ -55,6 +68,9 @@ h6 {
 		z-index: 0;
 		opacity: 1;
 		transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
 	}
 
 	.main-title {
@@ -98,6 +114,7 @@ h6 {
 	font-weight: 600;
 	font-size: 24px;
 	margin: 0 auto;
+  text-align: center;
 	color: #000;
 }
 
@@ -108,8 +125,8 @@ h6 {
 	border: 0;
 	cursor: pointer;
 	padding: 18px;
-	display: flex;
-	align-items: center;
+	display: inline-block;
+
 	white-space: nowrap;
 	border-radius: 100px;
 	position: relative;
@@ -120,6 +137,7 @@ h6 {
 	transition: 0.3s;
 
 	margin: 0 auto;
+  text-align: center;
 
 	&:active {
 		scale: 1;
@@ -191,7 +209,7 @@ h6 {
 	justify-content: center;
 	z-index: 1;
 
-  height: 1000px;
+  height: 1500px;
 
   &__phone {
     position: relative;
@@ -217,7 +235,8 @@ h6 {
     .svg-1 {
       fill: #fff8ea;
       top: 0;
-      left: 0;
+      left: 30%;
+      transform: translateX(-50%);
     }
 
     .svg-2 {
@@ -230,7 +249,9 @@ h6 {
     .svg-3 {
       fill: #ffd1cb;
       bottom: -20%;
-      right: 0;
+      right: 30%;
+      transform: translateX(+50%);
+
     }
 	}
 

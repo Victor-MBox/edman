@@ -13,6 +13,8 @@
 *.bak
 *.tmp
 
+img_old
+
 # Директории временных файлов
 .TemporaryItems
 .Trashes
