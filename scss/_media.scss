@@ -1,6 +1,6 @@
 @media (max-width: 1920px) {
 	.img-box {
-		height: 1100px;
+		height: 800px;
 	}
 }
 
@@ -49,11 +49,7 @@
 		font-size: 20px;
 	}
 
-	.logo {
-		img {
-			width: 26%;
-		}
-	}
+	
 
 	.header_scroll .logo img {
 		margin-top: -18px;
@@ -128,11 +124,17 @@
 }
 
 @media (max-width: 767px) {
-	.logo {
+	.header .logo {
 		img {
 			width: 216px;
+      margin-left: -70px;
 		}
 	}
+
+  .btn-login {
+    display: none;
+
+  }
 	.first-section .edman {
 		position: relative;
 		right: auto;
@@ -182,7 +184,7 @@
 		.svg-1,
 		.svg-2,
 		.svg-3 {
-			width: 70%;
+			width: 50%;
 			height: 70%;
 		}
 	}
@@ -215,7 +217,7 @@
 		}
 
 		.decor-7 {
-			left: 78%;
+			left: 74%;
 			top: 100%;
 		}
 
@@ -235,4 +237,11 @@
   .img-box__phone {
 		width: 240px;
 	}
+}
+
+
+@media (max-width: 480px) {
+	.main-btn__text {
+    font-size: 16px;
+  }
 }

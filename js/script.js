@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	const mediaQuery767 = window.matchMedia('(min-width: 768px)')
 
 	function applyAnimations() {
-
 		if (mediaQuery767.matches) {
 			gsap.to(firstSectionContainer, {
 				opacity: 0,
@@ -177,6 +176,169 @@ document.addEventListener('DOMContentLoaded', () => {
 				},
 			})
 		}
+
+		// Анимации для второй секции
+		gsap.to('#titleOpacity-1', {
+      color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 50%',
+				end: 'top 40%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#titleOpacity-2', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 45%',
+				end: 'top 35%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#titleOpacity-3', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 40%',
+				end: 'top 30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#titleOpacity-4', {
+      opacity: 1,
+      width: 66,
+      margin: '0 16px 0 6px',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 35%',
+				end: 'top 25%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-5', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 30%',
+				end: 'top 20%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-6', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 25%',
+				end: 'top 15%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-7', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 20%',
+				end: 'top 10%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-8', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 15%',
+				end: 'top 5%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-9', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 10%',
+				end: 'top 0%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-10', {
+			opacity: 1,
+			width: 66,
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 5%',
+				end: 'top -5%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-11', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-12', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top -5%',
+				end: 'top -15%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#titleOpacity-13', {
+			color: '#000',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.second-section',
+				start: 'top -10%',
+				end: 'top -20%',
+				scrub: true,
+			},
+		})
+
+    ScrollTrigger.create({
+			trigger: '.second-section',
+			start: 'top -20%',
+			scrub: true,
+			onEnter: () => {
+				document.querySelector('#titleOpacity-14').classList.add('visible')
+			},
+			onLeaveBack: () => {
+				document.querySelector('#titleOpacity-14').classList.remove('visible')
+			},
+			onLeave: () => {
+				document.querySelector('#titleOpacity-14').classList.remove('visible')
+			},
+		})
+
 	}
 
 	// Применение анимаций при загрузке страницы
@@ -184,4 +346,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Добавление слушателя для изменений размера экрана
 	mediaQuery.addEventListener('change', applyAnimations)
+})
+
+$('.sliders').slick({
+	infinite: true,
+	slidesToShow: 1,
 })

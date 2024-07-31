@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDMAN AI</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="icons/favic.png">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
@@ -36,6 +38,19 @@
             <a class="logo">
                 <img src="img/logo.svg" alt="logo">
             </a>
+
+            <div class="header__btns">
+                <a class="btn-login" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 17.7778V20H17.7778C18.3889 20 18.912 19.7824 19.3472 19.3472C19.7824 18.912 20 18.3889 20 17.7778V2.22222C20 1.61111 19.7824 1.08796 19.3472 0.652778C18.912 0.217593 18.3889 0 17.7778 0H10V2.22222H17.7778V17.7778H10ZM6.25 13.9444L7.77778 15.5556L13.3333 10L7.77778 4.44444L6.25 6.05556L9.08333 8.88889H0V11.1111H9.08333L6.25 13.9444Z"
+                            fill="black" />
+                    </svg>
+                    <span>Войти</span></a>
+                <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_header">
+                    <span class="main-btn__text">Демо урок</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -136,9 +151,241 @@
 
     </section>
 
-    <section class="section-two">
+    <!-- second-section -->
+    <section class="second-section">
+
+        <div class="second-section__scroll-wrapper">
+
+            <div class="container">
+                <p class="second-section__title">
+                    <span id="titleOpacity-1">Edman&nbsp;</span>
+                    <span id="titleOpacity-2">— это&nbsp;</span>
+                    <span id="titleOpacity-3">инновационная&nbsp;</span>
+                    <img id="titleOpacity-4" src="img/bitmap.png" alt="img">
+                    <span id="titleOpacity-5">нейросеть</span>
+                </p>
+            </div>
+
+            <img src="icons/v001.svg" alt="decor">
+
+            <div class="container">
+                <p class="second-section__sub-title">
+                    <span style="margin-bottom: -14px;">
+                        <span id="titleOpacity-6">с &nbsp;</span>
+                        <span id="titleOpacity-7">которой &nbsp;</span>
+                        <span id="titleOpacity-8">можно &nbsp;</span>
+                        <span id="titleOpacity-9">общаться,</span>
+                        
+                    
+                    </span> <br>
+                    <span>
+                        <img id="titleOpacity-10" src="icons/v002.png" alt="decor">
+
+                        <span id="titleOpacity-11">как с &nbsp;</span>
+                        <span id="titleOpacity-12">носителем &nbsp;</span>
+                        <span id="titleOpacity-13">языка &nbsp;</span>
+
+                        <a id="titleOpacity-14" href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.2889 9.62844H1.09149C0.782236 9.62844 0.523007 9.52099 0.313804 9.30611C0.104601 9.09122 0 8.82495 0 8.50729C0 8.18963 0.104601 7.92336 0.313804 7.70847C0.523007 7.49358 0.782236 7.38614 1.09149 7.38614H13.2889L7.94061 1.8925C7.72231 1.66827 7.61771 1.40667 7.62681 1.1077C7.6359 0.808723 7.7496 0.547121 7.9679 0.322891C8.1862 0.117347 8.44088 0.00990349 8.73194 0.000560575C9.02301 -0.00878234 9.27769 0.0986612 9.49599 0.322891L16.6998 7.72248C16.809 7.8346 16.8863 7.95606 16.9318 8.08686C16.9773 8.21766 17 8.3578 17 8.50729C17 8.65677 16.9773 8.79692 16.9318 8.92772C16.8863 9.05852 16.809 9.17998 16.6998 9.29209L9.49599 16.6917C9.29588 16.8972 9.04575 17 8.74559 17C8.44543 17 8.1862 16.8972 7.9679 16.6917C7.7496 16.4675 7.64045 16.2012 7.64045 15.8929C7.64045 15.5845 7.7496 15.3183 7.9679 15.094L13.2889 9.62844Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </a></span>
+                </p>
+            </div>
+        </div>
+
     </section>
 
+    <!-- third-section -->
+    <section class="third-section">
+        <div class="container">
+
+            <div class="sliders">
+
+                <div class="slide">
+
+                    <div class="slide__content">
+
+                        <div class="slide__title">Полноценный курс с пользой, <br>
+                            как в онлайн-школе.</div>
+
+                        <div class="slide__sub-title">
+                            Фокус именно на ваши цели без типовых уроков. <br><br>
+
+                            <b>+2500 новых слов гарантировано,</b> 4 блока занятий, включая увлекательную грамматику и
+                            отработки реальных ситуаций. В
+                            основе Эдман — эффективная методология, которой успешно обучают по всему миру.
+                        </div>
+
+                        <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+
+                            </span>
+                        </a>
+
+                        <img class="slide__decor" src="icons/decor_01.svg" alt="decor">
+
+                    </div>
+
+                    <div class="slide__img-wrapper">
+                        <img class="slide__img" src="img/slid-01.png" alt="slid">
+                    </div>
+
+                </div>
+
+                <div class="slide">
+
+                    <div class="slide__content">
+
+                        <div class="slide__title">Обучение в формате живого <br> диалога, как с человеком.</div>
+
+                        <div class="slide__sub-title">
+                            Не секрет, что лучший способ выучить язык — общаться с носителем. Эдман может поговорить
+                            голосом о любой ситуации или
+                            моменте, подбирая их на основе ваших интересов. Не стесняйтесь ошибок — Эдман поможет
+                            исправить каждую.
+                        </div>
+
+                        <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+
+                            </span>
+                        </a>
+
+                        <img class="slide__decor" src="icons/decor_01.svg" alt="decor">
+
+                    </div>
+
+                    <div class="slide__img-wrapper">
+                        <img class="slide__img" src="img/slid-02.png" alt="slid">
+                    </div>
+
+                </div>
+
+                <div class="slide">
+
+                    <div class="slide__content">
+
+                        <div class="slide__title">Ролевые диалоги, которые <br> пригодятся вам в жизни.</div>
+
+                        <div class="slide__sub-title">
+                            Выбирайте любые ситуации — путешествуете или выбираете работу мечты, занимаетесь шоппингом
+                            или заводите новые
+                            знакомства. Общайтесь по-английски голосом или в чате — так вы сможете тренировать язык в
+                            любое время, разобраться в
+                            грамматике, временах и многом другом.
+                        </div>
+
+                        <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+
+                            </span>
+                        </a>
+
+                        <img class="slide__decor" src="icons/decor_01.svg" alt="decor">
+
+                    </div>
+
+                    <div class="slide__img-wrapper">
+                        <img class="slide__img" src="img/slid-03.png" alt="slid">
+                    </div>
+
+                </div>
+
+                <div class="slide">
+
+                    <div class="slide__content">
+
+                        <div class="slide__title">Обучение в формате живого <br> диалога, как с человеком.</div>
+
+                        <div class="slide__sub-title">
+                            Не секрет, что лучший способ выучить язык — общаться с носителем. Эдман может поговорить
+                            голосом о любой ситуации или
+                            моменте, подбирая их на основе ваших интересов. Не стесняйтесь ошибок — Эдман поможет
+                            исправить каждую.
+                        </div>
+
+                        <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+
+                            </span>
+                        </a>
+
+                        <img class="slide__decor" src="icons/decor_01.svg" alt="decor">
+
+                    </div>
+
+                    <div class="slide__img-wrapper">
+                        <img class="slide__img" src="img/slid-04.png" alt="slid">
+                    </div>
+
+                </div>
+
+                <div class="slide">
+
+                    <div class="slide__content">
+
+                        <div class="slide__title">Ролевые диалоги, которые <br> пригодятся вам в жизни.</div>
+
+                        <div class="slide__sub-title">
+                            Выбирайте любые ситуации — путешествуете или выбираете работу мечты, занимаетесь шоппингом
+                            или заводите новые
+                            знакомства. Общайтесь по-английски голосом или в чате — так вы сможете тренировать язык в
+                            любое время, разобраться в
+                            грамматике, временах и многом другом.
+                        </div>
+
+                        <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_blue">
+                            <span class="main-btn__text">Запустить демо
+
+                            </span>
+                        </a>
+
+                        <img class="slide__decor" src="icons/decor_01.svg" alt="decor">
+
+                    </div>
+
+                    <div class="slide__img-wrapper">
+                        <img class="slide__img" src="img/slid-05.png" alt="slid">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- fourth section -->
+    <div class="fourth-section">
+        <div class="container">
+            <div class="scroll-box">
+                <img src="img/edmin-text.png" alt="edman">
+
+                <div class="scroll-box__sub-title">
+                    Получите персональную программу за 5 минут общения с Edman.
+                    Edman can talk in a voice about any situation or moment, matching them based on your interests.
+                    Don't be embarrassed by
+                    mistakes - Edman can help you correct every mistake.
+                </div>
+
+                <div class="scroll-box__title">
+                    Уверенный английский быстрее и дешевле. Эффект через 3 недели!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
