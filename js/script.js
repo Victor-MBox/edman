@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Анимации для второй секции
 		gsap.to('#titleOpacity-1', {
-      color: '#000',
+			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
 				trigger: '.second-section',
@@ -212,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		gsap.to('#titleOpacity-4', {
-      opacity: 1,
-      width: 66,
-      margin: '0 16px 0 6px',
+			opacity: 1,
+			width: 66,
+			margin: '0 16px 0 6px',
 			duration: 0.5,
 			scrollTrigger: {
 				trigger: '.second-section',
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-5', {
+		gsap.to('#titleOpacity-5', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-6', {
+		gsap.to('#titleOpacity-6', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-7', {
+		gsap.to('#titleOpacity-7', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-8', {
+		gsap.to('#titleOpacity-8', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-9', {
+		gsap.to('#titleOpacity-9', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-10', {
+		gsap.to('#titleOpacity-10', {
 			opacity: 1,
 			width: 66,
 			duration: 0.5,
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-11', {
+		gsap.to('#titleOpacity-11', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-12', {
+		gsap.to('#titleOpacity-12', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#titleOpacity-13', {
+		gsap.to('#titleOpacity-13', {
 			color: '#000',
 			duration: 0.5,
 			scrollTrigger: {
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    ScrollTrigger.create({
+		ScrollTrigger.create({
 			trigger: '.second-section',
 			start: 'top -20%',
 			scrub: true,
@@ -339,6 +339,427 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
+		// Анимации для ТРЕТЬЕй секции
+		gsap.to('#slid1', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid2', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid2', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid5', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg1 ', {
+			opacity: 0,
+			left: '0%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg2 ', {
+			opacity: 1,
+			left: '50%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg2', {
+			opacity: 0,
+			left: '0%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg3 ', {
+			opacity: 1,
+			left: '50%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg3', {
+			opacity: 0,
+			left: '0%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg4', {
+			opacity: 1,
+			left: '50%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg4', {
+			opacity: 0,
+			left: '0%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slidImg5', {
+			opacity: 1,
+			left: '50%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		/* //* Фон */
+		gsap.to('#slideDecor4', {
+			left: '-100%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor4', {
+			left: '-150%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor4', {
+			left: '-200%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor4', {
+			left: '-250%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		///////
+		gsap.to('#slideDecor3', {
+			right: '-50%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor3', {
+			right: '-100%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor3', {
+			right: '-160%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor3', {
+			right: '-210%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		/////
+		gsap.to('#slideDecor1', {
+			left: '-30%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor1', {
+			left: '-60%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor1', {
+			left: '-120%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor1', {
+			left: '-200%',
+
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		/////
+		gsap.to('#slideDecor2', {
+			right: '-20%',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor2', {
+			right: '-50%',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -20%',
+				end: 'top -30%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor2', {
+			right: '-90%',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -40%',
+				end: 'top -50%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slideDecor2', {
+			right: '-140%',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -60%',
+				end: 'top -70%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#thirdSection', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -130%',
+				end: 'top -150%',
+				scrub: true,
+			},
+		})
+
+		/* ЧЕТВЕРТАЯ СЕКЦИЯ */
+
+		gsap.to('#fourthSectionContainer', {
+			maxWidth: '100%',
+			padding: '0',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 20%',
+				end: 'top 0%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#scrollBox', {
+
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 10%',
+				end: 'top -20%',
+				scrub: true,
+			},
+			'--scrollBoxAfterBorderRadius': '0px', 
+			'--scrollBoxAfterFilter': 'blur(0px)', 
+		})
+
+    gsap.to('#scrollBox', {
+			padding: '120px 120px',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 20%',
+				end: 'top 0%',
+				scrub: true,
+			},
+		})
+
+    gsap.to('#header', {
+      background: 'none',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 20%',
+				end: 'top 0%',
+				scrub: true,
+			},
+		})
 	}
 
 	// Применение анимаций при загрузке страницы
@@ -346,9 +767,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Добавление слушателя для изменений размера экрана
 	mediaQuery.addEventListener('change', applyAnimations)
-})
-
-$('.sliders').slick({
-	infinite: true,
-	slidesToShow: 1,
 })
