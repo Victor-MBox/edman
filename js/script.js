@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top 0%',
-				end: 'top -10%',
+				end: 'top -30%',
 				scrub: true,
 			},
 		})
@@ -356,63 +356,63 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -15%',
+				end: 'top -45%',
 				scrub: true,
 			},
 		})
 
 		gsap.to('#slid2', {
-			opacity: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid3', {
-			opacity: 1,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid3', {
-			opacity: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid4', {
-			opacity: 1,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid4', {
 			opacity: 0,
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -60%',
-				end: 'top -70%',
+				end: 'top -90%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -75%',
+				end: 'top -105%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -135%',
+				end: 'top -165%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 1,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -150%',
+				end: 'top -180%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -210%',
+				end: 'top -240%',
 				scrub: true,
 			},
 		})
@@ -422,8 +422,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -225%',
+				end: 'top -255%',
 				scrub: true,
 			},
 		})
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top 0%',
-				end: 'top -10%',
+				end: 'top -30%',
 				scrub: true,
 			},
 		})
@@ -446,8 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -15%',
+				end: 'top -45%',
 				scrub: true,
 			},
 		})
@@ -458,8 +458,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
+				start: 'top -60%',
+				end: 'top -90%',
 				scrub: true,
 			},
 		})
@@ -470,8 +470,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
+				start: 'top -75%',
+				end: 'top -105%',
 				scrub: true,
 			},
 		})
@@ -482,8 +482,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
+				start: 'top -135%',
+				end: 'top -165%',
 				scrub: true,
 			},
 		})
@@ -494,8 +494,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
+				start: 'top -150%',
+				end: 'top -180%',
 				scrub: true,
 			},
 		})
@@ -506,8 +506,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -210%',
+				end: 'top -240%',
 				scrub: true,
 			},
 		})
@@ -518,14 +518,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -225%',
+				end: 'top -255%',
 				scrub: true,
 			},
 		})
 
 		/* //* Фон */
-		gsap.to('#slideDecor4', {
+		/* gsap.to('#slideDecor4', {
 			left: '-100%',
 
 			scrollTrigger: {
@@ -700,7 +700,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				scrub: true,
 			},
 		})
-
+ */
 		gsap.to('#thirdSection', {
 			opacity: 0,
 			duration: 1,
@@ -720,14 +720,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
-				start: 'top 20%',
+				start: 'top 30%',
 				end: 'top 0%',
 				scrub: true,
 			},
 		})
 
 		gsap.to('#scrollBox', {
-
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
@@ -735,11 +734,11 @@ document.addEventListener('DOMContentLoaded', () => {
 				end: 'top -20%',
 				scrub: true,
 			},
-			'--scrollBoxAfterBorderRadius': '0px', 
-			'--scrollBoxAfterFilter': 'blur(0px)', 
+			'--scrollBoxAfterBorderRadius': '0px',
+			'--scrollBoxAfterFilter': 'blur(0px)',
 		})
 
-    gsap.to('#scrollBox', {
+		gsap.to('#scrollBox', {
 			padding: '120px 120px',
 			duration: 1,
 			scrollTrigger: {
@@ -750,13 +749,43 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-    gsap.to('#header', {
-      background: 'none',
+		gsap.to('#header', {
+			background: 'none',
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
 				start: 'top 20%',
 				end: 'top 0%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#edmanImg', {
+			width: '1150px',
+			duration: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 20%',
+				end: 'top 0%',
+				scrub: true,
+			},
+		})
+
+		gsap.to('#scrollBoxTitle', {
+			opacity: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 5%',
+				end: 'top -20%',
+				scrub: true,
+			},
+		})
+		gsap.to('#scrollBoxSubTitle', {
+			opacity: 1,
+			scrollTrigger: {
+				trigger: '.fourth-section',
+				start: 'top 5%',
+				end: 'top -20%',
 				scrub: true,
 			},
 		})

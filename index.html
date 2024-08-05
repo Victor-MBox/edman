@@ -11,6 +11,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollSmoother.min.js"></script>
 
 </head>
 
@@ -32,6 +33,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLBJSFLW" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
 
     <header class="header" id="header">
         <div class="container">
@@ -58,13 +60,16 @@
 
         <div class="container">
 
-            <h1 class="main-title">Повышайте навыки <span class="main-title__blue">слушания и разговора <br></span> в
+            <h1 class="main-title">Повышайте навыки <span class="main-title__blue">слушания и разговора
+                    <br></span>
+                в
                 формате живых диалогов <br><span class="main-title__violet">с ИИ-репетитором</span> <br>
                 английского языка</h1>
 
             <img class="edman" src="img/edman.png.webp" alt="edman">
 
-            <div class="main-subtitle">Только нужные занятия, подобранные персонально под ваш уровень и цели. Получите
+            <div class="main-subtitle">Только нужные занятия, подобранные персонально под ваш уровень и цели.
+                Получите
                 персональную программу сегодня!</div>
 
             <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn">
@@ -225,7 +230,8 @@
                     <div class="slide__sub-title">
                         Фокус именно на ваши цели без типовых уроков. <br><br>
 
-                        <b>+2500 новых слов гарантировано,</b> 4 блока занятий, включая увлекательную грамматику и
+                        <b>+2500 новых слов гарантировано,</b> 4 блока занятий, включая увлекательную грамматику
+                        и
                         отработки реальных ситуаций. В
                         основе Эдман — эффективная методология, которой успешно обучают по всему миру.
                     </div>
@@ -266,9 +272,11 @@
                     <div class="slide__title">Ролевые диалоги, которые <br> пригодятся вам в жизни.</div>
 
                     <div class="slide__sub-title">
-                        Выбирайте любые ситуации — путешествуете или выбираете работу мечты, занимаетесь шоппингом
+                        Выбирайте любые ситуации — путешествуете или выбираете работу мечты, занимаетесь
+                        шоппингом
                         или заводите новые
-                        знакомства. Общайтесь по-английски голосом или в чате — так вы сможете тренировать язык в
+                        знакомства. Общайтесь по-английски голосом или в чате — так вы сможете тренировать язык
+                        в
                         любое время, разобраться в
                         грамматике, временах и многом другом.
                     </div>
@@ -288,7 +296,8 @@
                     <div class="slide__title">Персонализированные темы, которые <br> интересны именно вам.</div>
 
                     <div class="slide__sub-title">
-                        Сценарий урока создается интеллектуально на основе ваших предпочтений, обеспечивая высокую
+                        Сценарий урока создается интеллектуально на основе ваших предпочтений, обеспечивая
+                        высокую
                         практическую ценность. Такой
                         подход повышает мотивацию заниматься чаще, так что скучно точно не будет!
                     </div>
@@ -305,11 +314,14 @@
 
                 <div id="slid5" class="slide__content" style="opacity: 0; ">
 
-                    <div class="slide__title">Вовлекающий интерактивный контент, <br> мотивирующий заниматься <br>
-                        постоянно.</div>
+                    <div class="slide__title">Вовлекающий интерактивный контент, <br> мотивирующий заниматься
+                        <br>
+                        постоянно.
+                    </div>
 
                     <div class="slide__sub-title">
-                        Обсуждайте фотографии, статьи, истории в легком и увлекательном формате. Контент генерируется на
+                        Обсуждайте фотографии, статьи, истории в легком и увлекательном формате. Контент
+                        генерируется на
                         лету с минимальной
                         задержкой, а новые слова собираются автоматически
                     </div>
@@ -324,7 +336,7 @@
 
                 </div>
 
-                
+
 
                 <div class="slide__img-wrapper">
                     <img id="slidImg1" class="slide__img" src="img/slid-01.png" alt="slid">
@@ -344,17 +356,20 @@
     <section class="fourth-section">
         <div id="fourthSectionContainer" class="container">
             <div id="scrollBox" class="scroll-box">
-                <img src="img/edmin-text.png" alt="edman">
+                <div class="container">
+                    <img id="edmanImg" src="img/edmin-text.png" alt="edman">
 
-                <div class="scroll-box__sub-title">
-                    Получите персональную программу за 5 минут общения с Edman.
-                    Edman can talk in a voice about any situation or moment, matching them based on your interests.
-                    Don't be embarrassed by
-                    mistakes - Edman can help you correct every mistake.
-                </div>
+                    <div class="scroll-box__sub-title" id="scrollBoxSubTitle">
+                        Получите персональную программу за 5 минут общения с Edman.
+                        Edman can talk in a voice about any situation or moment, matching them based on your
+                        interests.
+                        Don't be embarrassed by
+                        mistakes - Edman can help you correct every mistake.
+                    </div>
 
-                <div class="scroll-box__title">
-                    Уверенный английский быстрее и дешевле. Эффект через 3 недели!
+                    <div class="scroll-box__title" id="scrollBoxTitle">
+                        Уверенный английский быстрее и дешевле. Эффект через 3 недели!
+                    </div>
                 </div>
             </div>
 
