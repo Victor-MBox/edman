@@ -38,13 +38,14 @@ h6 {
 /* Header */
 .header {
 	height: 130px;
-	position: sticky;
 	z-index: 5;
-	top: 0;
 	margin-bottom: 63px;
-	background: #fff;
+	background: #ffffff80;
+	backdrop-filter: blur(12px);
+	position: sticky;
+	top: -20px;
 
-	transition: 0.3s;
+	transition: 0.7s;
 
 	.logo {
 		width: 206px;
@@ -58,6 +59,10 @@ h6 {
 	}
 
 	&_scroll {
+		top: -130px;
+	}
+
+	&_sticky {
 		top: -20px;
 	}
 
@@ -196,7 +201,7 @@ h6 {
 /* контейнер с анимацией */
 
 .first-section {
-	margin: 0 auto 30%;
+	margin: 0 auto 40%;
 
 	&__video-wrapper {
 		position: absolute;
@@ -393,13 +398,13 @@ h6 {
 
 .sliders {
 	position: sticky;
-	top: 120px;
+	top: 104px;
 }
 
 .slide {
 	&__title {
 		font-weight: 800;
-		font-size: 56px;
+		font-size: 46px;
 		line-height: 118%;
 		letter-spacing: -0.03em;
 		text-align: center;
@@ -444,6 +449,7 @@ h6 {
 
 		img {
 			position: absolute;
+			height: 444px;
 			top: 420px;
 			left: 50%;
 

@@ -16,12 +16,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	gsap.registerPlugin(ScrollTrigger)
 
 	window.addEventListener('scroll', function () {
-		if (window.scrollY >= 100) {
+		if (window.scrollY >= 10) {
 			header.classList.add('header_scroll') // Добавляем новый класс
 		} else {
 			header.classList.remove('header_scroll') // Убираем класс, если прокрутка меньше 100 пикселей
 		}
 	})
+
+		let lastScrollY = window.scrollY
+
+		window.addEventListener('scroll', function () {
+			if (window.scrollY < lastScrollY) {
+				header.classList.add('header_sticky')
+			} else {
+				header.classList.remove('header_sticky')
+			}
+			lastScrollY = window.scrollY
+		})
 
 	// Проверка медиазапроса
 	const mediaQuery = window.matchMedia('(min-width: 1025px)')

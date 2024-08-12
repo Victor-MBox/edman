@@ -8,6 +8,10 @@
 	.img-box {
 		height: 900px;
 	}
+
+	.slide__img-wrapper img {
+		height: 360px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -206,9 +210,12 @@
 		margin: 0 auto 38px;
 	}
 
-	.first-section .container {
-		position: relative;
-		top: auto;
+	.first-section {
+		overflow: hidden;
+		.container {
+			position: relative;
+			top: auto;
+		}
 	}
 
 	.img-box {
