@@ -42,7 +42,7 @@ h6 {
 	z-index: 5;
 	top: 0;
 	margin-bottom: 63px;
-	background: #fff3;
+	background: #fff;
 
 	transition: 0.3s;
 
@@ -116,12 +116,6 @@ h6 {
 	.main-btn {
 		margin-bottom: 60px;
 	}
-
-	.edman {
-		position: absolute;
-		right: -18px;
-		top: 78px;
-	}
 }
 
 .main-title {
@@ -186,12 +180,44 @@ h6 {
 		line-height: 1;
 		color: #fff;
 	}
+
+	&:hover {
+		background: linear-gradient(180deg, #515f71 0%, #1d212f 100%);
+	}
+}
+
+.main-btn_blue {
+	&:hover {
+		background: linear-gradient(180deg, #436ee5 0%, #1a4ee5 100%);
+		box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+	}
 }
 
 /* контейнер с анимацией */
 
 .first-section {
 	margin: 0 auto 30%;
+
+	&__video-wrapper {
+		position: absolute;
+		right: -64px;
+		top: 90px;
+		width: 300px;
+
+		.edman {
+			width: 80%;
+			position: relative;
+			z-index: 1;
+		}
+
+		img {
+			position: absolute;
+			right: 12px;
+			top: -13px;
+			z-index: 0;
+			width: 90%;
+		}
+	}
 }
 
 .img-box {
@@ -360,7 +386,7 @@ h6 {
 .third-section {
 	position: relative;
 	.container {
-		height: 180vh;
+		height: 370vh;
 	}
 }
 /* Слайдер */
@@ -454,16 +480,16 @@ h6 {
 		top: 100px;
 
 		#slideDecor1 {
-			left: 0%;
+			right: 0%;
 			top: 360px;
 		}
 		#slideDecor2 {
 			right: 0;
-			top: 380px;
+			top: 440px;
 		}
 		#slideDecor3 {
-			right: 0;
-			top: 360px;
+			left: -120px;
+			top: 400px;
 		}
 		#slideDecor4 {
 			left: -0%;
@@ -505,7 +531,7 @@ h6 {
 	}
 
 	&__sub-title {
-    opacity: 0;
+		opacity: 0;
 		font-weight: 400;
 		font-size: 18px;
 		text-align: center;
@@ -515,7 +541,7 @@ h6 {
 	}
 
 	&__title {
-    opacity: 0;
+		opacity: 0;
 		font-weight: 800;
 		font-size: 78px;
 		line-height: 109%;
@@ -592,7 +618,6 @@ h6 {
 			letter-spacing: -0.03em;
 			text-align: center;
 			color: #0f1722;
-			margin-left: -32px;
 			margin-bottom: -30px;
 		}
 	}
@@ -639,6 +664,9 @@ h6 {
 	}
 
 	&__logo-box {
+		img {
+			margin-left: -44px;
+		}
 		p {
 			max-width: 416px;
 			font-weight: 400;

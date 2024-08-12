@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const mediaQuery767 = window.matchMedia('(min-width: 768px)')
 
 	function applyAnimations() {
+		// Очистка предыдущих анимаций
+		ScrollTrigger.getAll().forEach(t => t.kill())
+
 		if (mediaQuery767.matches) {
 			gsap.to(firstSectionContainer, {
 				opacity: 0,
@@ -36,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '1px',
 					end: '400px',
 					scrub: true,
+					invalidateOnRefresh: true,
 					onUpdate: self => {
 						if (self.progress === 1) {
 							firstSectionContainer.style.visibility = 'hidden'
@@ -61,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '100px',
 					end: '600px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -75,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '150px',
 					end: '650px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -89,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '100px',
 					end: '600px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -103,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '150px',
 					end: '650px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -117,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '100px',
 					end: '600px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -131,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '150px',
 					end: '650px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -145,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '100px',
 					end: '600px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -159,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '100px',
 					end: '600px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 
@@ -173,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: '200px',
 					end: '650px',
 					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 		}
@@ -186,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 50%',
 				end: 'top 40%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -197,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 45%',
 				end: 'top 35%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -208,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 40%',
 				end: 'top 30%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -221,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 35%',
 				end: 'top 25%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -232,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 30%',
 				end: 'top 20%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -243,6 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 25%',
 				end: 'top 15%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -254,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 20%',
 				end: 'top 10%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -265,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 15%',
 				end: 'top 5%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -276,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 10%',
 				end: 'top 0%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -288,6 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 5%',
 				end: 'top -5%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -299,6 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 0%',
 				end: 'top -10%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -310,6 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top -5%',
 				end: 'top -15%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -321,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top -10%',
 				end: 'top -20%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -328,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			trigger: '.second-section',
 			start: 'top -20%',
 			scrub: true,
+			invalidateOnRefresh: true,
 			onEnter: () => {
 				document.querySelector('#titleOpacity-14').classList.add('visible')
 			},
@@ -339,381 +366,419 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-		// Анимации для ТРЕТЬЕй секции
+		//! Анимации для ТРЕТЬЕй секции
 		gsap.to('#slid1', {
 			opacity: 0,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top 0%',
 				end: 'top -30%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slid2', {
 			opacity: 1,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -15%',
 				end: 'top -45%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slid2', {
 			opacity: 0,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -90%',
+				start: 'top -75%',
+				end: 'top -106%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slid3', {
 			opacity: 1,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -75%',
-				end: 'top -105%',
+				start: 'top -90%',
+				end: 'top -120%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slid3', {
 			opacity: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -135%',
-				end: 'top -165%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid4', {
-			opacity: 1,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -150%',
 				end: 'top -180%',
 				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -165%',
+				end: 'top -195%',
+				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slid4', {
 			opacity: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -210%',
-				end: 'top -240%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slid5', {
-			opacity: 1,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -225%',
 				end: 'top -255%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		gsap.to('#slidImg1 ', {
+		gsap.to('#slid5', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -240%',
+				end: 'top -270%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slidImg1', {
 			opacity: 0,
 			left: '0%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top 0%',
 				end: 'top -30%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		gsap.to('#slidImg2 ', {
+		gsap.to('#slidImg2', {
 			opacity: 1,
 			left: '50%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -15%',
 				end: 'top -45%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slidImg2', {
 			opacity: 0,
 			left: '0%',
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -90%',
-				scrub: true,
-			},
-		})
-
-		gsap.to('#slidImg3 ', {
-			opacity: 1,
-			left: '50%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
 				start: 'top -75%',
-				end: 'top -105%',
+				end: 'top -107%',
 				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slidImg3', {
+			opacity: 1,
+			left: '50%',
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -90%',
+				end: 'top -120%',
+				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slidImg3', {
 			opacity: 0,
 			left: '0%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -135%',
-				end: 'top -165%',
+				start: 'top -150%',
+				end: 'top -180%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slidImg4', {
 			opacity: 1,
 			left: '50%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -150%',
-				end: 'top -180%',
+				start: 'top -165%',
+				end: 'top -195%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slidImg4', {
 			opacity: 0,
 			left: '0%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -210%',
-				end: 'top -240%',
+				start: 'top -225%',
+				end: 'top -255%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slidImg5', {
 			opacity: 1,
 			left: '50%',
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -225%',
-				end: 'top -255%',
+				start: 'top -240%',
+				end: 'top -270%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		/* //* Фон */
-		/* gsap.to('#slideDecor4', {
-			left: '-100%',
+		//* Фон
+		/////// 1
 
+		gsap.to('#slideDecor4', {
+			x: '-15%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -0%',
+				end: 'top -45%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor4', {
-			left: '-150%',
-
+			x: '-30%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
+				start: 'top -90%',
+				end: 'top -120%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor4', {
-			left: '-200%',
-
+			x: '-45%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
+				start: 'top -165%',
+				end: 'top -195%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor4', {
-			left: '-250%',
-
+			x: '-60%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -240%',
+				end: 'top -270%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		///////
+		/////// 2
 		gsap.to('#slideDecor3', {
-			right: '-50%',
-
+			x: '-7%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -0%',
+				end: 'top -45%',
 				scrub: true,
-			},
-		})
-
-		gsap.to('#slideDecor3', {
-			right: '-100%',
-
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
-				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor3', {
-			right: '-160%',
-
+			x: '-14%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
+				start: 'top -90%',
+				end: 'top -120%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor3', {
-			right: '-210%',
-
+			x: '-21%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -165%',
+				end: 'top -195%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		/////
-		gsap.to('#slideDecor1', {
-			left: '-30%',
-
+		gsap.to('#slideDecor3', {
+			x: '-28%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -240%',
+				end: 'top -270%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
+		///// 3
 		gsap.to('#slideDecor1', {
-			left: '-60%',
-
+			x: '10%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
+				start: 'top -0%',
+				end: 'top -45%',
 				scrub: true,
-			},
-		})
-
-		gsap.to('#slideDecor1', {
-			left: '-120%',
-
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
-				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor1', {
-			left: '-200%',
-
+			x: '20%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -90%',
+				end: 'top -120%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
-		/////
+		gsap.to('#slideDecor1', {
+			x: '30%',
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -165%',
+				end: 'top -195%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slideDecor1', {
+			x: '40%',
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -240%',
+				end: 'top -270%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		///// 4
 		gsap.to('#slideDecor2', {
-			right: '-20%',
+			x: '7%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -10%',
+				start: 'top -0%',
+				end: 'top -45%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor2', {
-			right: '-50%',
+			x: '14%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -20%',
-				end: 'top -30%',
+				start: 'top -90%',
+				end: 'top -120%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor2', {
-			right: '-90%',
+			x: '21%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -40%',
-				end: 'top -50%',
+				start: 'top -165%',
+				end: 'top -195%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
 		gsap.to('#slideDecor2', {
-			right: '-140%',
-			duration: 1,
+			x: '28%',
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -60%',
-				end: 'top -70%',
+				start: 'top -240%',
+				end: 'top -270%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
- */
+
+		////////////////////////////////
+
 		gsap.to('#thirdSection', {
 			opacity: 0,
-			duration: 1,
+			ease: 'power1.inOut',
 			scrollTrigger: {
 				trigger: '.third-section',
-				start: 'top -130%',
-				end: 'top -150%',
+				start: 'top -320%',
+				end: 'top -350%',
 				scrub: true,
 			},
 		})
 
 		/* ЧЕТВЕРТАЯ СЕКЦИЯ */
-
 		gsap.to('#fourthSectionContainer', {
 			maxWidth: '100%',
 			padding: '0',
@@ -723,6 +788,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 30%',
 				end: 'top 0%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -733,6 +799,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 10%',
 				end: 'top -20%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 			'--scrollBoxAfterBorderRadius': '0px',
 			'--scrollBoxAfterFilter': 'blur(0px)',
@@ -746,6 +813,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 20%',
 				end: 'top 0%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -757,6 +825,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 20%',
 				end: 'top 0%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -768,6 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 20%',
 				end: 'top 0%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 
@@ -778,6 +848,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 5%',
 				end: 'top -20%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 		gsap.to('#scrollBoxSubTitle', {
@@ -787,13 +858,15 @@ document.addEventListener('DOMContentLoaded', () => {
 				start: 'top 5%',
 				end: 'top -20%',
 				scrub: true,
+				invalidateOnRefresh: true,
 			},
 		})
 	}
 
 	// Применение анимаций при загрузке страницы
-	applyAnimations()
+	window.addEventListener('load', applyAnimations)
 
 	// Добавление слушателя для изменений размера экрана
 	mediaQuery.addEventListener('change', applyAnimations)
+	mediaQuery767.addEventListener('change', applyAnimations)
 })

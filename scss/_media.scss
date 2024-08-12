@@ -11,6 +11,10 @@
 }
 
 @media (max-width: 1200px) {
+	.header .logo img {
+		margin-left: 20px;
+	}
+
 	.main-title {
 		font-size: 48px;
 	}
@@ -33,6 +37,24 @@
 	.decor-3 {
 		display: none;
 	}
+
+	.first-section {
+		&__video-wrapper {
+			right: -64px;
+			top: 90px;
+			width: 256px;
+
+			img {
+				right: 36px;
+				top: -13px;
+				width: 82%;
+			}
+		}
+
+		.edman {
+			width: 186px;
+		}
+	}
 }
 
 @media (max-width: 1024px) {
@@ -48,8 +70,6 @@
 	.main-subtitle {
 		font-size: 20px;
 	}
-
-	
 
 	.header_scroll .logo img {
 		margin-top: -18px;
@@ -111,6 +131,21 @@
 			display: none;
 		}
 	}
+
+	.first-section {
+		&__video-wrapper {
+			width: 210px;
+
+			img {
+				right: 44px;
+				width: 82%;
+			}
+		}
+
+		.edman {
+			width: 140px;
+		}
+	}
 }
 
 @media (max-width: 860px) {
@@ -121,20 +156,46 @@
 	.first-section .edman {
 		width: 136px;
 	}
+
+	.first-section {
+		&__video-wrapper {
+			position: relative;
+			width: 100%;
+			top: auto;
+			right: auto;
+			margin: 0 auto;
+
+			img {
+				right: auto;
+				width: 250px;
+				left: 50%;
+				transform: translateX(-38%);
+			}
+		}
+
+		.edman {
+			position: relative;
+			right: auto;
+			bottom: auto;
+			top: auto;
+			width: 220px;
+			margin: 0 auto 38px;
+			display: flex;
+		}
+	}
 }
 
 @media (max-width: 767px) {
 	.header .logo {
 		img {
 			width: 216px;
-      margin-left: -70px;
+			margin-left: -70px;
 		}
 	}
 
-  .btn-login {
-    display: none;
-
-  }
+	.btn-login {
+		display: none;
+	}
 	.first-section .edman {
 		position: relative;
 		right: auto;
@@ -189,10 +250,10 @@
 		}
 	}
 
-  .img-box {
+	.img-box {
 		.decor-2 {
 			left: 76%;
-			width: 22%;
+			width: 40%;
 		}
 		.decor-3 {
 			left: 10%;
@@ -208,12 +269,11 @@
 
 		.decor-1 {
 			left: 22%;
-			width: 26%;
+			width: 40%;
 		}
 
 		.decor-6 {
-			width: 10%;
-			left: 94%;
+			display: none;
 		}
 
 		.decor-7 {
@@ -227,21 +287,42 @@
 		}
 
 		.decor-5 {
-			left: 92%;
-			top: 16%;
-			width: 14%;
+			display: none;
 		}
-
 	}
 
-  .img-box__phone {
-		width: 240px;
+	.img-box__phone {
+		width: 200px;
 	}
 }
 
-
 @media (max-width: 480px) {
 	.main-btn__text {
-    font-size: 16px;
-  }
+		font-size: 16px;
+	}
+
+	.main-btn_header {
+		padding: 10px 22px;
+	}
+
+	.header .logo img {
+		width: 190px;
+	}
+}
+
+@media (max-width: 380px) {
+	.main-title {
+		font-size: 24px;
+	}
+
+	.header .logo img {
+		margin-left: -40px;
+	}
+
+	.main-btn_header {
+		padding: 8px 16px;
+	}
+	.header .logo img {
+		width: 180px;
+	}
 }
