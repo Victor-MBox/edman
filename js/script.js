@@ -23,16 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-		let lastScrollY = window.scrollY
+	let lastScrollY = window.scrollY
 
-		window.addEventListener('scroll', function () {
-			if (window.scrollY < lastScrollY) {
-				header.classList.add('header_sticky')
-			} else {
-				header.classList.remove('header_sticky')
-			}
-			lastScrollY = window.scrollY
-		})
+	window.addEventListener('scroll', function () {
+		if (window.scrollY < lastScrollY) {
+			header.classList.add('header_sticky')
+		} else {
+			header.classList.remove('header_sticky')
+		}
+		lastScrollY = window.scrollY
+	})
 
 	// Проверка медиазапроса
 	const mediaQuery = window.matchMedia('(min-width: 1025px)')
@@ -880,4 +880,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Добавление слушателя для изменений размера экрана
 	mediaQuery.addEventListener('change', applyAnimations)
 	mediaQuery767.addEventListener('change', applyAnimations)
+
+	/* //! ДЛЯ ВИДЕО В ПЕРВОЙ СЕКЦИИ */
+	function canPlayHEVC() {
+		var video = document.createElement('video')
+		return video.canPlayType('video/mp4; codecs="hvc1"') !== ''
+	}
+
+	function canPlayWebM() {
+		var video = document.createElement('video')
+		return video.canPlayType('video/webm; codecs="vp8, vorbis"') !== ''
+	}
+
+	window.onload = function () {
+		var videoElement = document.getElementById('edman')
+
+		if (canPlayHEVC()) {
+			videoElement.innerHTML =
+				'<source src="img/video/edman_lp_nobg_480-hevc-safari.mp4" type="video/mp4">'
+		} else if (canPlayWebM()) {
+			videoElement.innerHTML =
+				'<source src="img/video/edman_lp.webm" type="video/webm">'
+		} else {
+			videoElement.innerHTML =
+				'Ваш браузер не поддерживает элемент <code>video</code>.'
+		}
+
+		// Start playing the video
+		videoElement.load()
+	}
 })
