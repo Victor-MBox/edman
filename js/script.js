@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Очистка предыдущих анимаций
 		ScrollTrigger.getAll().forEach(t => t.kill())
 
-		if (mediaQuery767.matches) {
+		if (mediaQuery.matches) {
+			// Анимации для экранов больше 1024px
+
 			gsap.to(firstSectionContainer, {
 				opacity: 0,
 				ease: 'none',
@@ -60,10 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					},
 				},
 			})
-		}
 
-		if (mediaQuery.matches) {
-			// Анимации для экранов больше 1024px
 			/// Анимации для каждого элемента декора
 			gsap.to(decor1, {
 				scale: 1.6,
@@ -817,11 +816,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		gsap.to('#scrollBox', {
-			padding: '120px 120px',
+			padding: '120px 0',
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
-				start: 'top 20%',
+				start: 'top 30%',
 				end: 'top 0%',
 				scrub: true,
 				invalidateOnRefresh: true,
@@ -833,7 +832,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
-				start: 'top 20%',
+				start: 'top 30%',
 				end: 'top 0%',
 				scrub: true,
 				invalidateOnRefresh: true,
@@ -841,7 +840,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		gsap.to('#edmanImg', {
-			width: '1150px',
+			width: '100%',
 			duration: 1,
 			scrollTrigger: {
 				trigger: '.fourth-section',
@@ -872,6 +871,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				invalidateOnRefresh: true,
 			},
 		})
+		/* } */
+
+		if (mediaQuery767.matches) {
+		}
 	}
 
 	// Применение анимаций при загрузке страницы
