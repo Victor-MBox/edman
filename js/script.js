@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	// Проверка медиазапроса
-	const mediaQuery = window.matchMedia('(min-width: 1025px)')
-	const mediaQuery767 = window.matchMedia('(min-width: 768px)')
+	const mediaQuery = window.matchMedia('(min-width: 768px)')
+	const mediaQuery767 = window.matchMedia('(max-width: 767px)')
 
 	function applyAnimations() {
 		// Очистка предыдущих анимаций
@@ -237,19 +237,37 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-		gsap.to('#titleOpacity-4', {
-			opacity: 1,
-			width: 66,
-			margin: '0 16px 0 6px',
-			duration: 0.5,
-			scrollTrigger: {
-				trigger: '.second-section',
-				start: 'top 35%',
-				end: 'top 25%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
+		if (mediaQuery.matches) {
+			gsap.to('#titleOpacity-4', {
+				opacity: 1,
+				width: 66,
+				margin: '0 16px 0 6px',
+				duration: 0.5,
+				scrollTrigger: {
+					trigger: '.second-section',
+					start: 'top 35%',
+					end: 'top 25%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
+
+		if (mediaQuery767.matches) {
+			gsap.to('#titleOpacity-4', {
+				opacity: 1,
+				width: 30,
+				margin: '0 10px 0 0',
+				duration: 0.5,
+				scrollTrigger: {
+					trigger: '.second-section',
+					start: 'top 35%',
+					end: 'top 25%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
 
 		gsap.to('#titleOpacity-5', {
 			color: '#000',
@@ -311,18 +329,35 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-		gsap.to('#titleOpacity-10', {
-			opacity: 1,
-			width: 66,
-			duration: 0.5,
-			scrollTrigger: {
-				trigger: '.second-section',
-				start: 'top 5%',
-				end: 'top -5%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
+		if (mediaQuery.matches) {
+			gsap.to('#titleOpacity-10', {
+				opacity: 1,
+				width: 66,
+				duration: 0.5,
+				scrollTrigger: {
+					trigger: '.second-section',
+					start: 'top 5%',
+					end: 'top -5%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
+
+		if (mediaQuery767.matches) {
+			gsap.to('#titleOpacity-10', {
+				opacity: 1,
+				width: 36,
+				duration: 0.5,
+				scrollTrigger: {
+					trigger: '.second-section',
+					start: 'top 5%',
+					end: 'top -5%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
 
 		gsap.to('#titleOpacity-11', {
 			color: '#000',
@@ -789,6 +824,34 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		/* ЧЕТВЕРТАЯ СЕКЦИЯ */
+
+		if (mediaQuery.matches) {
+			gsap.to('#scrollBox', {
+				padding: '120px 0',
+				duration: 1,
+				scrollTrigger: {
+					trigger: '.fourth-section',
+					start: 'top 30%',
+					end: 'top 0%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
+
+		if (mediaQuery767.matches) {
+			gsap.to('#scrollBox', {
+				padding: '50px 0 70px',
+				duration: 1,
+				scrollTrigger: {
+					trigger: '.fourth-section',
+					start: 'top 30%',
+					end: 'top 0%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
 		gsap.to('#fourthSectionContainer', {
 			maxWidth: '100%',
 			padding: '0',
@@ -815,17 +878,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			'--scrollBoxAfterFilter': 'blur(0px)',
 		})
 
-		gsap.to('#scrollBox', {
-			padding: '120px 0',
-			duration: 1,
-			scrollTrigger: {
-				trigger: '.fourth-section',
-				start: 'top 30%',
-				end: 'top 0%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
+		
 
 		gsap.to('#header', {
 			background: 'none',
@@ -871,10 +924,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				invalidateOnRefresh: true,
 			},
 		})
-		/* } */
-
-		if (mediaQuery767.matches) {
-		}
+		
 	}
 
 	// Применение анимаций при загрузке страницы
