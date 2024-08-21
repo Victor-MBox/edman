@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollSmoother.min.js"></script>
     <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
 </head>
 
@@ -44,7 +45,7 @@
             </a>
 
             <div class="header__btns">
-                <a class="btn-login" href="#">
+                <a class="btn-login" href="https://app.edman.ai/login">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M10 17.7778V20H17.7778C18.3889 20 18.912 19.7824 19.3472 19.3472C19.7824 18.912 20 18.3889 20 17.7778V2.22222C20 1.61111 19.7824 1.08796 19.3472 0.652778C18.912 0.217593 18.3889 0 17.7778 0H10V2.22222H17.7778V17.7778H10ZM6.25 13.9444L7.77778 15.5556L13.3333 10L7.77778 4.44444L6.25 6.05556L9.08333 8.88889H0V11.1111H9.08333L6.25 13.9444Z"
@@ -58,6 +59,7 @@
         </div>
     </header>
 
+    <!-- first-section -->
     <section class="first-section">
 
         <div class="container">
@@ -73,7 +75,7 @@
                 <video id="edman" class="edman" autoplay loop muted playsinline>
                     Ваш браузер не поддерживает элемент <code>video</code>.
                 </video>
-                
+
                 <img src="img/edman_bg.svg" alt="bg">
             </div>
 
@@ -385,7 +387,7 @@
 
     <!-- fourth section -->
     <section class="fourth-section">
-        <div id="fourthSectionContainer" >
+        <div id="fourthSectionContainer">
             <div id="scrollBox" class="scroll-box">
                 <div class="container">
                     <img id="edmanImg" src="img/edmin-text.png" alt="edman">
@@ -424,8 +426,165 @@
         </div>
     </section>
 
+    <!-- sixth section -->
+    <section class="sixth-section">
+        <div class="container">
 
-    <footer class="footer">
+            <div class="sixth-section__title">Решение для:</div>
+        </div>
+
+        <div class="sixth-section__carousel-wrapper">
+            <div class="sixth-section__carousel carousel">
+                <span>Поиска работы мечты</span>
+                <span>Незабываемых путешествий</span>
+                <span>Легкого обучения</span>
+                <span>Увлекательного саморазвития</span>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sixth-section__sub-title">Edman is based on an effective methodology that has been successfully
+                taught around the world.</div>
+
+            <div class="sixth-section__table-wrapper">
+                <div class="table">
+                    <div id="tableRow1" class="table__row table__row_logo">
+                        <div class="table__col-1"></div>
+                        <div class="table__col-2">
+                            <img src="img/logo.svg" alt="logo">
+                        </div>
+                        <div class="table__col-3">
+                            <p>Преподаватель английского</p>
+                            <svg width="420" height="182" viewBox="0 0 420 182" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.553781" filter="url(#filter0_f_4995_10296)">
+                                    <ellipse cx="210" cy="91" rx="152" ry="33" fill="#E2E2E2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_f_4995_10296" x="0.91608" y="0.91608" width="418.168"
+                                        height="180.168" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                            result="shape" />
+                                        <feGaussianBlur stdDeviation="28.542"
+                                            result="effect1_foregroundBlur_4995_10296" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="tableRow2" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-1.svg" alt="icon">
+                            Цена
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-01.svg" alt="icon">
+                        </div>
+                        <div class="table__col-3">
+                            <img style="margin-right: 28px;" src="icons/comparison-icon-05.svg" alt="icon">
+                            <img style="margin-right: 28px;" src="icons/comparison-icon-05.svg" alt="icon">
+                            <img style="margin-right: 28px;" src="icons/comparison-icon-05.svg" alt="icon">
+                            <img src="icons/comparison-icon-05.svg" alt="icon">
+
+                        </div>
+
+                    </div>
+                    <div id="tableRow3" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-2.svg" alt="icon">
+                            Сроки обучения
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-02.svg" alt="icon">
+
+                        </div>
+                        <div class="table__col-3">
+                            <img src="icons/comparison-icon-06.svg" alt="icon">
+
+                        </div>
+                    </div>
+                    <div id="tableRow4" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-3.svg" alt="icon">
+                            Время занятий
+                        </div>
+                        <div class="table__col-2">
+                            <span>По желанию</span>
+
+                        </div>
+                        <div class="table__col-3">
+                            <span>По расписанию</span>
+                        </div>
+                    </div>
+                    <div id="tableRow5" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-4.svg" alt="icon">
+                            Отслеживание прогресса
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-03.svg" alt="icon">
+
+                        </div>
+                        <div class="table__col-3">
+                            <img src="icons/comparison-icon-07.svg" alt="icon">
+
+                        </div>
+                    </div>
+                    <div id="tableRow6" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-5.svg" alt="icon">
+                            Восприятие на слух
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-03.svg" alt="icon">
+
+                        </div>
+                        <div class="table__col-3">
+                            <img src="icons/comparison-icon-08.svg" alt="icon">
+
+                        </div>
+                    </div>
+                    <div id="tableRow7" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-6.svg" alt="icon">
+                            Грамматика
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-04.svg" alt="icon">
+
+                        </div>
+                        <div class="table__col-3">
+                            <img src="icons/comparison-icon-08.svg" alt="icon">
+
+                        </div>
+                    </div>
+                    <div id="tableRow8" class="table__row">
+                        <div class="table__col-1">
+                            <img src="icons/comparison-7.svg" alt="icon">
+                            Деловой английский
+                        </div>
+                        <div class="table__col-2">
+                            <img src="icons/comparison-icon-03.svg" alt="icon">
+
+                        </div>
+                        <div class="table__col-3">
+                            <img src="icons/comparison-icon-07.svg" alt="icon">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__logo-box">
                 <img src="img/logo.svg" alt="logo">
@@ -433,16 +592,17 @@
                 <p>Английский язык в формате живых диалогов
                     с ИИ-репетитором.</p>
 
-                <a href="https://app.edman.ai/onboarding" target="_blank" class="main-btn main-btn_header">
+                <a href="https://app.edman.ai/onboarding" class="main-btn main-btn_header">
                     <span class="main-btn__text">Демо урок</span>
                 </a>
 
-                <span class="footer__copirayt">Copyright © 2024 Edman.ai. All rights reserved.</span>
+                <span class="footer__copirayt">All rights reserved - ООО "ИСТ" ИНН 7713726623 / 772301001 ОГРН
+                    1117746284149</span>
             </div>
 
             <div class="footer__wrapper">
                 <div class="footer__social">
-                    <a class="soc-link" href="#">
+                    <a class="soc-link" href="https://t.me/edmanai">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M20 10C20 4.47727 15.5227 0 10 0C4.47727 0 0 4.47727 0 10C0 15.5227 4.47727 20 10 20C15.5227 20 20 15.5227 20 10ZM14.6014 6.77909C14.4955 7.88773 13.6332 13.5123 13.4495 14.0764C13.2927 14.5582 13.1268 14.9736 12.8114 14.9741C12.4959 14.9741 12.1518 14.8641 11.8123 14.6214C11.4727 14.3786 9.21818 12.8668 8.905 12.6691C8.63 12.4959 8.33955 12.0636 8.74909 11.6468C8.95845 11.4335 10.0225 10.3969 10.8516 9.58906C11.3583 9.09547 11.7772 8.6873 11.86 8.60455C12.0782 8.38591 11.865 8.10636 11.5982 8.32454C11.3314 8.54318 7.60773 11.0341 7.28545 11.2345C6.98091 11.4236 6.43864 11.5382 5.96136 11.4064C5.46545 11.2695 4.62682 11.0155 4.29409 10.8968C3.97409 10.7827 3.85773 10.6727 3.85773 10.4768C3.85773 10.1982 4.25 10.0064 4.66455 9.83C5.10182 9.64364 12.6723 6.42955 13.2645 6.21591C13.6968 6.06 14.0686 6 14.32 6.12045C14.5273 6.22045 14.6336 6.44364 14.6014 6.77909Z"
@@ -450,16 +610,6 @@
                         </svg>
 
                         Telegram
-                    </a>
-
-                    <a class="soc-link" href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20 10C20 4.47727 15.5227 0 10 0C4.47727 0 0 4.47727 0 10C0 11.8477 0.503182 13.5773 1.37773 15.0623L0.0977273 19.8564L5.12636 18.7314C6.56864 19.5382 8.23 20 10 20C15.5227 20 20 15.5227 20 10ZM15.0786 12.2741C15.1427 12.3782 15.1427 12.8741 14.9368 13.4523C14.7309 14.03 13.7191 14.5882 13.2664 14.6273C13.2227 14.6313 13.1793 14.6365 13.1347 14.6417C12.7124 14.6918 12.1827 14.7546 10.2932 14.0105C7.95969 13.0912 6.42441 10.8098 6.11141 10.3446C6.08639 10.3075 6.06918 10.2819 6.06 10.2695C5.93591 10.1073 5.05182 8.92818 5.05182 7.71136C5.05182 6.57557 5.60569 5.9791 5.86334 5.70164C5.88264 5.68085 5.90029 5.66185 5.91591 5.64455C6.14455 5.39636 6.41182 5.33455 6.57864 5.33455C6.74091 5.33455 6.90773 5.33455 7.05182 5.34182C7.23 5.34591 7.42409 5.35773 7.61 5.76864C7.73915 6.05432 7.95702 6.5917 8.12808 7.01361C8.24961 7.31335 8.34751 7.55482 8.37318 7.60636C8.435 7.73045 8.47818 7.87818 8.39227 8.04045C8.3826 8.06017 8.37349 8.07896 8.36473 8.097C8.29938 8.23168 8.254 8.32518 8.14818 8.45545C8.10568 8.50432 8.0619 8.55731 8.0182 8.61023C7.93383 8.71236 7.84971 8.81419 7.77545 8.88545C7.65136 9.01 7.52409 9.14545 7.66727 9.39318C7.81045 9.64045 8.30727 10.4514 9.04318 11.1064C9.83373 11.8129 10.5216 12.1105 10.8709 12.2615C10.9394 12.2911 10.9948 12.3151 11.0355 12.3355C11.2836 12.4595 11.4273 12.4405 11.5705 12.2736C11.7182 12.1114 12.1905 11.5527 12.3573 11.3045C12.5195 11.0564 12.6864 11.0986 12.9114 11.1805C13.1395 11.2623 14.3573 11.8632 14.6055 11.9873C14.6533 12.0112 14.6979 12.0328 14.7393 12.0528C14.9126 12.1366 15.0284 12.1926 15.0786 12.2741Z"
-                                fill="#444444" />
-                        </svg>
-
-                        Whatsapp
                     </a>
 
                     <a class="soc-link" href="#">
@@ -476,19 +626,24 @@
                 <div class="footer__links">
 
                     <ul>
-                        <li><a class="soc-link" href="#">Личный кабинет</a></li>
-                        <li><a class="soc-link" href="#">Поддержка</a></li>
-                        <li><a class="soc-link" href="#">Политика конфиденциальности</a></li>
-                        <li><a class="soc-link" href="#">Пользовательское соглашение</a></li>
-                        <li><a class="soc-link" href="#">Юридическое инфо</a></li>
+                        <li><a class="soc-link" href="https://app.edman.ai/login">Личный кабинет</a></li>
+                        <li><a class="soc-link" href="https://wa.me/message/4DA7WT5FGXIRE1">Поддержка</a></li>
+                        <li><a class="soc-link" href="https://edman.ai/privacy-policy/">Политика конфиденциальности</a>
+                        </li>
+                        <li><a class="soc-link" href="https://edman.ai/user-agreement/">Пользовательское соглашение</a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <span class="footer__copirayt-mob">Copyright © 2024 Edman.ai. All rights reserved.</span>
+            <span class="footer__copirayt-mob">All rights reserved - ООО "ИСТ" ИНН 7713726623 / 772301001 ОГРН
+                1117746284149</span>
         </div>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

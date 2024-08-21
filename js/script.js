@@ -878,8 +878,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			'--scrollBoxAfterFilter': 'blur(0px)',
 		})
 
-		
-
 		gsap.to('#header', {
 			background: 'none',
 			duration: 1,
@@ -924,7 +922,115 @@ document.addEventListener('DOMContentLoaded', () => {
 				invalidateOnRefresh: true,
 			},
 		})
-		
+
+		/* СЕКЦИЯ С ТАБЛИЦЕЙ*/
+		gsap.to('#tableRow1', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 35%',
+				end: 'top 25%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow2', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 30%',
+				end: 'top 20%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow3', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 25%',
+				end: 'top 15%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow4', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 20%',
+				end: 'top 10%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow5', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 15%',
+				end: 'top 5%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow6', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 10%',
+				end: 'top 0%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#tableRow7', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 5%',
+				end: 'top -5%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+		gsap.to('#tableRow8', {
+			opacity: 1,
+			y: '-20px',
+			scrollTrigger: {
+				trigger: '.sixth-section',
+				start: 'top 0%',
+				end: 'top -10%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		/* footer */
+		gsap.to('#footer', {
+			opacity: 1,
+			y: '-100px',
+			scrollTrigger: {
+				trigger: '.footer',
+				start: 'top 80%',
+				end: 'top 60%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
 	}
 
 	// Применение анимаций при загрузке страницы
@@ -934,6 +1040,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	mediaQuery.addEventListener('change', applyAnimations)
 	mediaQuery767.addEventListener('change', applyAnimations)
 
+	///////////////////////////////////////////////////////////////////////
 	/* //! ДЛЯ ВИДЕО В ПЕРВОЙ СЕКЦИИ */
 	function canPlayHEVC() {
 		var video = document.createElement('video')
@@ -962,4 +1069,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Start playing the video
 		videoElement.load()
 	}
+
+	/* //! КАРУСЕЛЬ */
+	$('.carousel').slick({
+		centerMode: true,
+		slidesToShow: 1, // Оставляем 1 слайд, но используем centerPadding
+		dots: false,
+		arrows: false,
+		autoplay: true,
+		variableWidth: true,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		centerPadding: '20%', // Увеличиваем значение для отображения половинок слайдов
+		autoplaySpeed: 5000,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					centerPadding: '10px', // Для мобильных устройств уменьшаем отступ
+				},
+			},
+		],
+	})
 })
