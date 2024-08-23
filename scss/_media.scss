@@ -124,6 +124,16 @@
 	.fourth-section {
 		padding: 40px 0 100px;
 	}
+
+	.sixth-section {
+		&__title {
+			font-size: 34px;
+		}
+	}
+
+	.slick-slide {
+		font-size: 36px;
+	} 
 }
 
 @media (max-width: 1024px) {

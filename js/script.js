@@ -35,16 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	// Проверка медиазапроса
-	const mediaQuery = window.matchMedia('(min-width: 768px)')
-	const mediaQuery767 = window.matchMedia('(max-width: 767px)')
+	const mediaQuery = window.matchMedia('(min-width: 1025px)')
+	const mediaQuery1024 = window.matchMedia('(max-width: 1024px)')
 
 	function applyAnimations() {
 		// Очистка предыдущих анимаций
 		ScrollTrigger.getAll().forEach(t => t.kill())
 
+		// Анимации для экранов больше 1025px
 		if (mediaQuery.matches) {
-			// Анимации для экранов больше 1024px
-
 			gsap.to(firstSectionContainer, {
 				opacity: 0,
 				ease: 'none',
@@ -198,6 +197,418 @@ document.addEventListener('DOMContentLoaded', () => {
 					invalidateOnRefresh: true,
 				},
 			})
+
+			//! Анимации для ТРЕТЬЕй секции
+			gsap.to('#slid1', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top 0%',
+					end: 'top -30%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid2', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -15%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid2', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -75%',
+					end: 'top -106%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid3', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid3', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -150%',
+					end: 'top -180%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid4', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid4', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -225%',
+					end: 'top -255%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slid5', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg1', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top 0%',
+					end: 'top -30%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -15%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -75%',
+					end: 'top -107%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -150%',
+					end: 'top -180%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -225%',
+					end: 'top -255%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg5', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			//* Фон
+			/////// 1
+
+			gsap.to('#slideDecor4', {
+				x: '-15%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -0%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor4', {
+				x: '-30%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor4', {
+				x: '-45%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor4', {
+				x: '-60%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			/////// 2
+			gsap.to('#slideDecor3', {
+				x: '-7%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -0%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor3', {
+				x: '-14%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor3', {
+				x: '-21%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor3', {
+				x: '-28%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			///// 3
+			gsap.to('#slideDecor1', {
+				x: '10%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -0%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor1', {
+				x: '20%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor1', {
+				x: '30%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor1', {
+				x: '40%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			///// 4
+			gsap.to('#slideDecor2', {
+				x: '7%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -0%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor2', {
+				x: '14%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor2', {
+				x: '21%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slideDecor2', {
+				x: '28%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			////////////////////////////////
+
+			gsap.to('#thirdSection', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -320%',
+					end: 'top -350%',
+					scrub: true,
+				},
+			})
 		}
 
 		// Анимации для второй секции
@@ -237,6 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
+		// Анимации для экранов больше 1025px
 		if (mediaQuery.matches) {
 			gsap.to('#titleOpacity-4', {
 				opacity: 1,
@@ -253,7 +665,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 
-		if (mediaQuery767.matches) {
+		// Анимации для экранов МЕНЬШЕ 1024px
+		if (mediaQuery1024.matches) {
 			gsap.to('#titleOpacity-4', {
 				opacity: 1,
 				width: 30,
@@ -329,6 +742,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
+		// Анимации для экранов больше 1025px
 		if (mediaQuery.matches) {
 			gsap.to('#titleOpacity-10', {
 				opacity: 1,
@@ -344,7 +758,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 
-		if (mediaQuery767.matches) {
+		// Анимации для экранов МЕНЬШЕ 1024px
+		if (mediaQuery1024.matches) {
 			gsap.to('#titleOpacity-10', {
 				opacity: 1,
 				width: 36,
@@ -411,420 +826,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-		//! Анимации для ТРЕТЬЕй секции
-		gsap.to('#slid1', {
-			opacity: 0,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -30%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid2', {
-			opacity: 1,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -15%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid2', {
-			opacity: 0,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -75%',
-				end: 'top -106%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid3', {
-			opacity: 1,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid3', {
-			opacity: 0,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -150%',
-				end: 'top -180%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid4', {
-			opacity: 1,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid4', {
-			opacity: 0,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -225%',
-				end: 'top -255%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slid5', {
-			opacity: 1,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg1', {
-			opacity: 0,
-			left: '0%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top 0%',
-				end: 'top -30%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg2', {
-			opacity: 1,
-			left: '50%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -15%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg2', {
-			opacity: 0,
-			left: '0%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -75%',
-				end: 'top -107%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg3', {
-			opacity: 1,
-			left: '50%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg3', {
-			opacity: 0,
-			left: '0%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -150%',
-				end: 'top -180%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg4', {
-			opacity: 1,
-			left: '50%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg4', {
-			opacity: 0,
-			left: '0%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -225%',
-				end: 'top -255%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slidImg5', {
-			opacity: 1,
-			left: '50%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		//* Фон
-		/////// 1
-
-		gsap.to('#slideDecor4', {
-			x: '-15%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -0%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor4', {
-			x: '-30%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor4', {
-			x: '-45%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor4', {
-			x: '-60%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		/////// 2
-		gsap.to('#slideDecor3', {
-			x: '-7%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -0%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor3', {
-			x: '-14%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor3', {
-			x: '-21%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor3', {
-			x: '-28%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		///// 3
-		gsap.to('#slideDecor1', {
-			x: '10%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -0%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor1', {
-			x: '20%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor1', {
-			x: '30%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor1', {
-			x: '40%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		///// 4
-		gsap.to('#slideDecor2', {
-			x: '7%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -0%',
-				end: 'top -45%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor2', {
-			x: '14%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -90%',
-				end: 'top -120%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor2', {
-			x: '21%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -165%',
-				end: 'top -195%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		gsap.to('#slideDecor2', {
-			x: '28%',
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -240%',
-				end: 'top -270%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
-
-		////////////////////////////////
-
-		gsap.to('#thirdSection', {
-			opacity: 0,
-			ease: 'power1.inOut',
-			scrollTrigger: {
-				trigger: '.third-section',
-				start: 'top -320%',
-				end: 'top -350%',
-				scrub: true,
-			},
-		})
-
 		/* ЧЕТВЕРТАЯ СЕКЦИЯ */
 
+		// Анимации для экранов больше 1025px
 		if (mediaQuery.matches) {
 			gsap.to('#scrollBox', {
 				padding: '120px 0',
@@ -839,7 +843,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 
-		if (mediaQuery767.matches) {
+		// Анимации для экранов МЕНЬШЕ 1024px
+		if (mediaQuery1024.matches) {
 			gsap.to('#scrollBox', {
 				padding: '50px 0 70px',
 				duration: 1,
@@ -1038,7 +1043,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Добавление слушателя для изменений размера экрана
 	mediaQuery.addEventListener('change', applyAnimations)
-	mediaQuery767.addEventListener('change', applyAnimations)
+	mediaQuery1024.addEventListener('change', applyAnimations)
 
 	///////////////////////////////////////////////////////////////////////
 	/* //! ДЛЯ ВИДЕО В ПЕРВОЙ СЕКЦИИ */
