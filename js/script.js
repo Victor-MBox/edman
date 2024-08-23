@@ -198,208 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				},
 			})
 
-			//! Анимации для ТРЕТЬЕй секции
-			gsap.to('#slid1', {
-				opacity: 0,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top 0%',
-					end: 'top -30%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid2', {
-				opacity: 1,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -15%',
-					end: 'top -45%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid2', {
-				opacity: 0,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -75%',
-					end: 'top -106%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid3', {
-				opacity: 1,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -90%',
-					end: 'top -120%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid3', {
-				opacity: 0,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -150%',
-					end: 'top -180%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid4', {
-				opacity: 1,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -165%',
-					end: 'top -195%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid4', {
-				opacity: 0,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -225%',
-					end: 'top -255%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slid5', {
-				opacity: 1,
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -240%',
-					end: 'top -270%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg1', {
-				opacity: 0,
-				left: '0%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top 0%',
-					end: 'top -30%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg2', {
-				opacity: 1,
-				left: '50%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -15%',
-					end: 'top -45%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg2', {
-				opacity: 0,
-				left: '0%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -75%',
-					end: 'top -107%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg3', {
-				opacity: 1,
-				left: '50%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -90%',
-					end: 'top -120%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg3', {
-				opacity: 0,
-				left: '0%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -150%',
-					end: 'top -180%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg4', {
-				opacity: 1,
-				left: '50%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -165%',
-					end: 'top -195%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg4', {
-				opacity: 0,
-				left: '0%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -225%',
-					end: 'top -255%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			gsap.to('#slidImg5', {
-				opacity: 1,
-				left: '50%',
-				ease: 'power1.inOut',
-				scrollTrigger: {
-					trigger: '.third-section',
-					start: 'top -240%',
-					end: 'top -270%',
-					scrub: true,
-					invalidateOnRefresh: true,
-				},
-			})
-
-			//* Фон
+			//* Фон 3 секции
 			/////// 1
 
 			gsap.to('#slideDecor4', {
@@ -607,6 +406,309 @@ document.addEventListener('DOMContentLoaded', () => {
 					start: 'top -320%',
 					end: 'top -350%',
 					scrub: true,
+				},
+			})
+		}
+
+		//! Анимации для ТРЕТЬЕй секции
+		gsap.to('#slid1', {
+			opacity: 0,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top 0%',
+				end: 'top -30%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid2', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -15%',
+				end: 'top -45%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid2', {
+			opacity: 0,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -75%',
+				end: 'top -106%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -90%',
+				end: 'top -120%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid3', {
+			opacity: 0,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -150%',
+				end: 'top -180%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -165%',
+				end: 'top -195%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid4', {
+			opacity: 0,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -225%',
+				end: 'top -255%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		gsap.to('#slid5', {
+			opacity: 1,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.third-section',
+				start: 'top -240%',
+				end: 'top -270%',
+				scrub: true,
+				invalidateOnRefresh: true,
+			},
+		})
+
+		// Анимации для экранов больше 1025px
+		if (mediaQuery.matches) {
+			gsap.to('#slidImg1', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top 0%',
+					end: 'top -30%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -15%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -75%',
+					end: 'top -107%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -150%',
+					end: 'top -180%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 0,
+				left: '0%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -225%',
+					end: 'top -255%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg5', {
+				opacity: 1,
+				left: '50%',
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
+
+		// Анимации для экранов МЕНЬШЕ 1024px
+		if (mediaQuery1024.matches) {
+			gsap.to('#slidImg1', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top 0%',
+					end: 'top -30%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -15%',
+					end: 'top -45%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg2', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -75%',
+					end: 'top -107%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -90%',
+					end: 'top -120%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg3', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -150%',
+					end: 'top -180%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -165%',
+					end: 'top -195%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg4', {
+				opacity: 0,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -225%',
+					end: 'top -255%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+
+			gsap.to('#slidImg5', {
+				opacity: 1,
+				ease: 'power1.inOut',
+				scrollTrigger: {
+					trigger: '.third-section',
+					start: 'top -240%',
+					end: 'top -270%',
+					scrub: true,
+					invalidateOnRefresh: true,
 				},
 			})
 		}
@@ -1025,17 +1127,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 		/* footer */
-		gsap.to('#footer', {
-			opacity: 1,
-			y: '-100px',
-			scrollTrigger: {
-				trigger: '.footer',
-				start: 'top 80%',
-				end: 'top 60%',
-				scrub: true,
-				invalidateOnRefresh: true,
-			},
-		})
+		// Анимации для экранов больше 1025px
+		if (mediaQuery.matches) {
+			gsap.to('#footer', {
+				opacity: 1,
+				y: '-100px',
+				scrollTrigger: {
+					trigger: '.footer',
+					start: 'top 80%',
+					end: 'top 60%',
+					scrub: true,
+					invalidateOnRefresh: true,
+				},
+			})
+		}
 	}
 
 	// Применение анимаций при загрузке страницы

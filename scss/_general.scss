@@ -11,9 +11,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* body {
+body {
 	overflow-x: hidden;
-} */
+}
 
 .container {
 	max-width: 1140px;
@@ -504,6 +504,10 @@ h6 {
 	}
 	&__decor-img {
 		position: absolute;
+	}
+
+	&__decor-wrapper-mob {
+		display: none;
 	}
 }
 
