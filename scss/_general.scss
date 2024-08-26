@@ -698,6 +698,14 @@ h6 {
 	&__table-wrapper {
 		margin-bottom: 140px;
 	}
+
+	&__table-wrapper-mob {
+		display: none;
+	}
+
+	&__carousel-wrapper {
+		display: none;
+	}
 }
 
 .slick-slide {

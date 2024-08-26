@@ -1194,6 +1194,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplaySpeed: 5000,
 		responsive: [
 			{
+				breakpoint: 1024,
+				settings: {
+					centerPadding: '10px', // Для мобильных устройств уменьшаем отступ
+				},
+			},
+			{
 				breakpoint: 768,
 				settings: {
 					centerPadding: '10px', // Для мобильных устройств уменьшаем отступ
