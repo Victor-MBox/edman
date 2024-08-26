@@ -699,6 +699,9 @@
 			margin-bottom: 60px;
 
 			.table {
+				&__row {
+					opacity: 1;
+				}
 				&__row_logo {
 					.table__col-1 {
 						display: none;
@@ -715,6 +718,10 @@
 				&__col-1 {
 					width: 70%;
 				}
+			}
+
+			.table__row_logo {
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -795,6 +802,28 @@
 	.footer__wrapper {
 		gap: 20px;
 		flex-direction: column;
+	}
+
+	.table__col-1 {
+		font-size: 14px;
+		img {
+			margin-right: 10px;
+		}
+	}
+
+	.table__row {
+		.table__col-2,
+		.table__col-3 {
+			span,
+			img {
+				max-width: 30%;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.sixth-section__table-wrapper .table__row_logo .table__col-2 img{
+		max-width: 300px;
 	}
 }
 
